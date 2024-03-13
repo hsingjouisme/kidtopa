@@ -1,0 +1,218 @@
+/* media query */
+@media (max-width:768px) {
+    .menu_layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+    .btn_layout{
+        margin-bottom: 0;
+    }
+}
+
+.container-fluid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+/* 導覽列 */
+.topnav{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background: snow;
+    font-family: 'Cinzel', "微軟正黑體";
+    text-align: center;
+}
+.logo{
+    color: brown;
+    border: none;
+    background: transparent;
+    text-align: center;
+
+}
+.logo_title{
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* 側邊欄/上方欄 */
+.aside_layout{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin: 0px auto;
+}
+.aside_content{
+    position: fixed;
+    margin: auto;
+    text-align: center;
+    top: 20%;
+}
+.search_layout{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    max-width: 250px;
+}
+.search_layout input{
+    width: 100%;
+    height: 50px;
+    background: snow;
+    display: inline-block;
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid brown;
+    border-right: none;
+}
+.search_layout input:focus{
+    outline: none;
+    border: 1px solid brown;
+    border-right: none;
+}
+.search_layout button{ 
+    display: inline-block;
+    background: none;
+    border: 1px solid brown;
+    border-left: none;
+    cursor: pointer;
+    color: brown;
+    background-color: snow;
+    border-radius: 0px 10px 10px 0px;
+    vertical-align: middle;
+    height: 50px;
+    left: 0;
+}
+.search_layout button:hover{
+    color: snow;
+    background-color: brown;
+}
+.menu_layout{
+    margin:30px auto 0px; 
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    left: 0;
+    position: relative;
+}
+.zone_btn{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    margin-left: -15px;
+    position: relative;
+    width: 80px;
+    margin:0px auto 20px;
+}
+.zone_btn::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    transition: all 0.5s;
+    bottom: 0px;
+    font-size: 20px;
+    left: 0%;
+    height: 2px;
+    background-color: brown ;
+}
+.zone_btn:hover::after{
+    width: 100%;
+}
+.weather_btn{
+    background-color: #CF9E9E;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+}
+
+/* 公園資訊 */
+.park_layout{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1100px;
+}
+.hidden{
+    display: none;
+}
+.location_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1000px;
+    margin: 80px auto;
+}
+.location{
+    color: 	#CF9E9E;
+    font-size: 45px;
+    font-family: "Kaisei Tokumin", serif;
+}
+.weather_info{
+    border-radius: 30px;
+    padding: 10px 15px;
+    background-color: 	#EBD6D6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-right: 0px;
+}
+.weather{
+    border-right: 1px solid brown;
+}
+.temperature{
+    border-right: 1px solid brown;
+}
+.weather img{
+    width: 50%;
+}
+.humidity{
+    border-right: 1px solid brown;
+}
+.park_info{
+    background-color: snow;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 15px;
+    border: 1px solid #CF9E9E;
+    width: 90%;
+    display: inline-block;
+}
+h2{
+    font-family: "Kaisei Tokumin", serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: brown;
+    margin: 10px auto;
+}
+span{
+    display: block;
+}
+#parkInformation_north{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+#parkInformation_east{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+#parkInformation_xiangshan{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+#search_info{
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 60px;
+}
